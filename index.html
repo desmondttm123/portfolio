@@ -1,10 +1,122 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My GitHub Pages Site</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Documentation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        nav {
+            background-color: #f2f2f2;
+            padding: 1rem;
+        }
+        nav a {
+            margin: 0 1rem;
+            text-decoration: none;
+            color: #333;
+        }
+        main {
+            padding: 2rem;
+        }
+        footer {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        .content-section {
+            margin-bottom: 2rem;
+        }
+        .content-section h2 {
+            border-bottom: 2px solid #4CAF50;
+            padding-bottom: 0.5rem;
+        }
+    </style>
 </head>
 <body>
-    <h1>Welcome to My GitHub Pages Site</h1>
-    <p>This is a simple GitHub Pages site.</p>
+    <header>
+        <h1>Project Documentation</h1>
+    </header>
+    <nav>
+        <a href="#introduction">Introduction</a>
+        <a href="#installation">Installation</a>
+        <a href="#usage">Usage</a>
+        <a href="#api">API</a>
+        <a href="#faq">FAQ</a>
+    </nav>
+    <main>
+        <div id="introduction" class="content-section">
+            <h2>Introduction</h2>
+            <p>Welcome to the project documentation. This site provides all the information you need to understand and use the project effectively.</p>
+        </div>
+        <div id="installation" class="content-section">
+            <h2>Installation</h2>
+            <p>Follow these steps to install the project:</p>
+            <ol>
+                <li>Step 1: Download the project files.</li>
+                <li>Step 2: Unzip the files to your preferred directory.</li>
+                <li>Step 3: Run the installer script.</li>
+            </ol>
+        </div>
+        <div id="usage" class="content-section">
+            <h2>Usage</h2>
+            <p>Here's how to use the project:</p>
+            <ul>
+                <li>Command 1: Description of command 1.</li>
+                <li>Command 2: Description of command 2.</li>
+                <li>Command 3: Description of command 3.</li>
+            </ul>
+        </div>
+        <div id="api" class="content-section">
+            <h2>API</h2>
+            <p>The project provides the following API endpoints:</p>
+            <table border="1" cellpadding="10">
+                <thead>
+                    <tr>
+                        <th>Endpoint</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>/api/v1/resource</td>
+                        <td>Gets the resource data.</td>
+                    </tr>
+                    <tr>
+                        <td>/api/v1/resource/{id}</td>
+                        <td>Gets the resource data by ID.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="faq" class="content-section">
+            <h2>FAQ</h2>
+            <p>Frequently Asked Questions:</p>
+            <dl>
+                <dt>Question 1</dt>
+                <dd>Answer to question 1.</dd>
+                <dt>Question 2</dt>
+                <dd>Answer to question 2.</dd>
+                <dt>Question 3</dt>
+                <dd>Answer to question 3.</dd>
+            </dl>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Project Documentation. All rights reserved.</p>
+    </footer>
 </body>
 </html>
