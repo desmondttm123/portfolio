@@ -1,5 +1,5 @@
 title: "Desmond's Portfolio"
-email: "your-email@example.com"
+email: "desmond_ttm@hotmail.com"
 description: "Showcasing my projects in electronics, robotics, and AI"
 baseurl: "/portfolio" # the subpath of your site
 url: "https://desmondttm123.github.io" # the base hostname & protocol for your site
@@ -7,7 +7,6 @@ theme: jekyll-theme-cayman
 
 # Social Links
 github_username: desmondttm123
-twitter_username: your-twitter-username
 
 # Build settings
 markdown: kramdown
