@@ -1,7 +1,7 @@
 title: "Desmond's Portfolio"
 email: "desmond_ttm@hotmail.com"
 description: "Showcasing my projects in electronics, robotics, and AI"
-baseurl: ""
+baseurl: "/portfolio"
 url: "https://desmondttm123.github.io"
 theme: jekyll-theme-midnight
 
