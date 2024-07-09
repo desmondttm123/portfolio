@@ -77,7 +77,6 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
-  concurrent-ruby (~> 1.2.3)
   http_parser.rb (~> 0.6.0)
   jekyll (~> 4.3.3)
   jekyll-feed (~> 0.12)

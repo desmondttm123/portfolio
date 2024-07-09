@@ -6,8 +6,9 @@
     <meta name="description" content="{{ site.description }}">
     <meta name="author" content="{{ site.author }}">
     <title>{{ page.title }} | {{ site.title }}</title>
-    <!-- Theme CSS is automatically included -->
-    <link rel="icon" type="image/png" href="{{ site.baseurl }}/assets/favicon.png">
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/styles.css' | relative_url }}">
+    <link rel="icon" type="image/png" href="{{ '/assets/favicon.png' | relative_url }}">
     {% seo %}
 </head>
 <body>
@@ -31,6 +32,5 @@
             <a href="https://github.com/{{ site.github_username }}">GitHub</a>
         </div>
     </footer>
-    {% feed_meta %}
 </body>
 </html>

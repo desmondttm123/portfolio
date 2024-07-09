@@ -1,24 +1,9 @@
 title: "Desmond's Portfolio"
 email: "desmond_ttm@hotmail.com"
 description: "Showcasing my projects in electronics, robotics, and AI"
-baseurl: "/portfolio" # the subpath of your site
-url: "https://desmondttm123.github.io" # the base hostname & protocol for your site
+baseurl: "/portfolio"
+url: "https://desmondttm123.github.io"
 theme: jekyll-theme-cayman
 
-# Social Links
 github_username: desmondttm123
-
-# Build settings
 markdown: kramdown
-
-# Additional Settings
-author: "Desmond TTM"
-permalink: pretty
-
-# Plugins
-plugins:
-  - jekyll-feed
-  - jekyll-seo-tag
-
-# SEO and Analytics
-google_analytics: UA-XXXXX-Y
