@@ -1,36 +1,61 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="{{ site.description }}">
-    <meta name="author" content="{{ site.author }}">
-    <title>{{ page.title }} | {{ site.title }}</title>
-    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
-    <link rel="stylesheet" href="{{ '/assets/styles.css' | relative_url }}">
-    <link rel="icon" type="image/png" href="{{ '/assets/favicon.png' | relative_url }}">
-    {% seo %}
-</head>
-<body>
-    <header>
-        <h1>{{ site.title }}</h1>
+<!doctype html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+{% seo %}
+    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <script src="{{ '/assets/js/respond.js' | relative_url }}"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!--[if lt IE 8]>
+    <link rel="stylesheet" href="{{ '/assets/css/ie.css' | relative_url }}">
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    {% include head-custom.html %}
+  </head>
+  <body>
+      <div id="header">
         <nav>
-            <ul>
-                <li><a href="{{ site.baseurl }}/">Home</a></li>
-                <li><a href="{{ site.baseurl }}/about/">About</a></li>
-                <li><a href="{{ site.baseurl }}/projects/">Projects</a></li>
-                <li><a href="{{ site.baseurl }}/contact/">Contact</a></li>
-            </ul>
+          <ul>
+            <li class="fork"><a href="{{ site.baseurl }}/">Home</a></li>
+            <li class="fork"><a href="{{ site.baseurl }}/robocup/">Robocup</a></li>
+            <li class="fork"><a href="{{ site.baseurl }}/projects/">Projects</a></li>
+            <li class="fork"><a href="{{ site.baseurl }}/contact/">Contact</a></li>
+            <li class="fork"><a href="{{ site.baseurl }}/about/">about</a></li>
+
+            
+           
+          </ul>
         </nav>
-    </header>
-    <main>
-        {{ content }}
-    </main>
-    <footer>
-        &copy; {{ site.time | date: '%Y' }} {{ site.title }}. All rights reserved.
-        <div>
-            <a href="https://github.com/{{ site.github_username }}">GitHub</a>
+      </div><!-- end header -->
+      <div class="dropdown">
+        <button class="dropbtn">Dropdown</button>
+        <div class="dropdown-content">
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
         </div>
-    </footer>
-</body>
+      </div>
+
+    <div class="wrapper">
+
+      <section>
+        <div id="title">
+          <h1>{{ site.title | default: site.github.repository_name }}</h1>
+          <p>{{ site.description | default: site.github.project_tagline }}</p>
+          <hr>
+          <span class="credits left">Project maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></span>
+          <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/mattgraham">mattgraham</a></span>
+        </div>
+
+        {{ content }}
+
+      </section>
+
+    </div>
+  </body>
 </html>

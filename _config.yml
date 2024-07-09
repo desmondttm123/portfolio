@@ -1,9 +1,10 @@
 title: "Desmond's Portfolio"
 email: "desmond_ttm@hotmail.com"
 description: "Showcasing my projects in electronics, robotics, and AI"
-baseurl: "/portfolio"
+baseurl: ""
 url: "https://desmondttm123.github.io"
-theme: jekyll-theme-cayman
+theme: jekyll-theme-midnight
 
-github_username: desmondttm123
-markdown: kramdown
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
