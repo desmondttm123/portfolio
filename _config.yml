@@ -10,3 +10,15 @@ github_username: desmondttm123
 
 # Build settings
 markdown: kramdown
+
+# Additional Settings
+author: "Desmond TTM"
+permalink: pretty
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# SEO and Analytics
+google_analytics: UA-XXXXX-Y
