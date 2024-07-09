@@ -6,7 +6,9 @@
     <meta name="description" content="{{ site.description }}">
     <meta name="author" content="{{ site.author }}">
     <title>{{ page.title }} | {{ site.title }}</title>
-    <link rel="stylesheet" href="{{ site.baseurl }}/assets/styles.css">
+    <!-- Theme CSS -->
+    <link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}">
+    <link rel="icon" type="image/png" href="{{ site.baseurl }}/assets/favicon.png">
     {% seo %}
 </head>
 <body>
