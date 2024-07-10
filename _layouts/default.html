@@ -11,27 +11,51 @@
    
 </head>
 <body>
+
+  <style type="text/css">
+/* Custom styles for the select dropdown */
+nav {
+  margin: 20px;
+}
+
+#menu {
+  appearance: none; /* Remove default styling */
+  -webkit-appearance: none; /* Remove default styling for WebKit browsers */
+  -moz-appearance: none; /* Remove default styling for Firefox */
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  width: 100%;
+  max-width: 200px; /* Optional: Limit the width of the dropdown */
+}
+
+#menu option {
+  background-color: #fff;
+  color: #000;
+}
+
+/* Custom dropdown arrow */
+#menu {
+  background-image: url('data:image/svg+xml;charset=US-ASCII,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4 5"><path fill="%23000" d="M2 0L0 2h4z"/></svg>');
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 8px 10px;
+  padding-right: 10px; /* Add space for the arrow */
+}
+  </style>
+
   <div id="header">
-    <!-- <a href="{{ site.baseurl }}/"><button id="menu-toggle">Home</button></a>
-    <a href="{{ site.baseurl }}/robocup"><button id="menu-toggle">Robocup</button></a>
-    <a href="{{ site.baseurl }}/about"><button id="menu-toggle">About</button></a> -->
-    <!-- /<nav>
-      <ul id="menu">
-        <li class="fork"><a href="{{ site.baseurl }}/">Home</a></li>
-        <li class="fork"><a href="{{ site.baseurl }}/robocup">Robocup</a></li>
-        <li class="fork"><a href="{{ site.baseurl }}/projects">Projects</a></li>
-        <li class="fork"><a href="{{ site.baseurl }}/contact">Contact</a></li>
-        <li class="fork"><a href="{{ site.baseurl }}/about">About</a></li>
-      </ul>
-    </nav> -->
-  </div><!-- end header -->
+  </div>end header
+  
   <div class="wrapper">
     <section>
+      
       <div id="title">
 
         <h1>{{ site.title | default: site.github.repository_name }}</h1>
         <p>{{ site.description | default: site.github.project_tagline }}</p>
-
         <nav>
           <select id="menu" onchange="location = this.value;">
             <option value="">☰ Menu</option>
@@ -41,7 +65,16 @@
             <option value="{{ site.baseurl }}/contact">Contact</option>
             <option value="{{ site.baseurl }}/about">About</option>
           </select>
+          <select id="menu" onchange="location = this.value;">
+            <option value="">☰ Robocup</option>
+            <option value="{{ site.baseurl }}/">Home</option>
+            <option value="{{ site.baseurl }}/robocup">Robocup</option>
+            <option value="{{ site.baseurl }}/projects">Projects</option>
+            <option value="{{ site.baseurl }}/contact">Contact</option>
+            <option value="{{ site.baseurl }}/about">About</option>
+          </select>
         </nav>
+
         <hr>
         
 

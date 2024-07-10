@@ -4,35 +4,4 @@
 @import "jekyll-theme-midnight"; /* Import the default Jekyll theme styles */
 
 
-/* Custom styles for the select dropdown */
-nav {
-    margin: 20px;
-  }
-  
-  #menu {
-    appearance: none; /* Remove default styling */
-    -webkit-appearance: none; /* Remove default styling for WebKit browsers */
-    -moz-appearance: none; /* Remove default styling for Firefox */
-    background-color: #f0f0f0;
-    border: 1px solid #ccc;
-    padding: 10px;
-    font-size: 16px;
-    border-radius: 5px;
-    width: 100%;
-    max-width: 200px; /* Optional: Limit the width of the dropdown */
-  }
-  
-  #menu option {
-    background-color: #fff;
-    color: #000;
-  }
-  
-  /* Custom dropdown arrow */
-  #menu {
-    background-image: url('data:image/svg+xml;charset=US-ASCII,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4 5"><path fill="%23000" d="M2 0L0 2h4z"/></svg>');
-    background-repeat: no-repeat;
-    background-position: right 10px center;
-    background-size: 8px 10px;
-    padding-right: 30px; /* Add space for the arrow */
-  }
-  
+
