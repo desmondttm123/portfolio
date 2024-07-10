@@ -5,8 +5,6 @@ title: "Home"
 
 # Welcome to My Portfolio
 
-![Profile Image](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjuWjlj6CwEyvxhr4pRuh4Eo66cDb_nGW1kLRK6-8Stw&s)  <!-- Add your profile image here -->
-
 Welcome to my portfolio! I am Desmond, an enthusiast in electronics, robotics, and AI. This site showcases my projects and contributions in these exciting fields.
 
 ## Projects
