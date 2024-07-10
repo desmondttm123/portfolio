@@ -32,11 +32,18 @@
         <h1>{{ site.title | default: site.github.repository_name }}</h1>
         <p>{{ site.description | default: site.github.project_tagline }}</p>
 
-        <a href="{{ site.baseurl }}/"><button id="menu-toggle">Home</button></a>
-        <a href="{{ site.baseurl }}/robocup"><button id="menu-toggle">Robocup</button></a>
-        <a href="{{ site.baseurl }}/about"><button id="menu-toggle">About</button></a>
-        
+        <nav>
+          <select id="menu" onchange="location = this.value;">
+            <option value="">☰ Menu</option>
+            <option value="{{ site.baseurl }}/">Home</option>
+            <option value="{{ site.baseurl }}/robocup">Robocup</option>
+            <option value="{{ site.baseurl }}/projects">Projects</option>
+            <option value="{{ site.baseurl }}/contact">Contact</option>
+            <option value="{{ site.baseurl }}/about">About</option>
+          </select>
+        </nav>
         <hr>
+        
 
         <span class="credits left">Project maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></span>
         <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/mattgraham">mattgraham</a></span>
