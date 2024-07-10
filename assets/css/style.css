@@ -1,4 +1,16 @@
-@import "{{ site.theme }}";
+---
+---
+
+@import "jekyll-theme-midnight"; /* Import the default Jekyll theme styles */
+
+/* Custom styles with increased specificity */
+body {
+  background-color: #f0f0f0; /* Light grey background for testing */
+}
+
+#menu-toggle {
+  background-color: red; /* Red background for testing */
+}
 
 /* Basic reset */
 body, ul {
@@ -15,6 +27,7 @@ nav ul {
   flex-wrap: wrap;
   justify-content: space-around;
   padding: 10px;
+  margin-top: 50px; /* Add margin to lower the navigation */
 }
 
 nav ul li {
@@ -54,4 +67,20 @@ nav ul li a {
 /* Default state for the toggle button */
 #menu-toggle {
   display: none; /* Hide the button on larger screens */
+}
+
+/* Ensure the button shows on smaller screens */
+@media (max-width: 768px) {
+  #menu-toggle {
+    display: block;
+  }
+}
+
+/* Custom font size for testing */
+h1 {
+  font-size: 300px !important; /* Ensure the custom font size is applied */
+}
+
+nav ul li a {
+  font-size: 18px !important; /* Custom font size for menu items */
 }
