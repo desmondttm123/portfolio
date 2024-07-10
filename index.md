@@ -10,27 +10,8 @@ Welcome to my portfolio! I am Desmond, an enthusiast in electronics, robotics, a
 ## Projects
 
 ### Autonomous Robot
-A robot that can navigate and perform tasks autonomously.
+An autonomous humanoid robot targeted to be a service robot.
 
-- **Technologies Used**: ROS2, Arduino, LIDAR
+- **Technologies Used**: ROS2, LIDAR, Realsense, 3D design
 - **Description**: Developed an autonomous robot capable of navigating through complex environments using SLAM.
 
-### AI-powered Drone
-A drone equipped with AI capabilities for enhanced functionality.
-
-- **Technologies Used**: Python, OpenCV, TensorFlow
-- **Description**: Created an AI-powered drone that can perform real-time object detection and tracking.
-
-### Home Automation System
-A system that automates various tasks in the home environment.
-
-- **Technologies Used**: Raspberry Pi, Home Assistant, MQTT
-- **Description**: Built a home automation system to control lights, appliances, and security features remotely.
-
-## About Me
-
-I am passionate about leveraging technology to solve real-world problems. My interests include robotics, artificial intelligence, and automation. In my spare time, I enjoy tinkering with new gadgets and exploring the latest tech trends.
-
-## Contact
-
-Feel free to reach out to me via [email](mailto:desmond_ttm@hotmail.com) or connect with me on [GitHub](https://github.com/desmondttm123).
